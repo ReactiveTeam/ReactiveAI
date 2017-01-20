@@ -73,10 +73,94 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bot\BotMain.cs" />
+    <Compile Include="Intelligence\Actions\ActionBase.cs" />
+    <Compile Include="Intelligence\Actions\ActionCollection.cs" />
+    <Compile Include="Intelligence\Actions\ActionSequence.cs" />
+    <Compile Include="Intelligence\Actions\ActionStatus.cs" />
+    <Compile Include="Intelligence\Actions\AiTransition.cs" />
+    <Compile Include="Intelligence\Actions\BehaviourTransition.cs" />
+    <Compile Include="Intelligence\Actions\GenericActionBase.cs" />
+    <Compile Include="Intelligence\Actions\Interfaces\IAction.cs" />
+    <Compile Include="Intelligence\Actions\Interfaces\IActionCollection.cs" />
+    <Compile Include="Intelligence\Actions\Interfaces\ITransition.cs" />
+    <Compile Include="Intelligence\Actors\AiCollection.cs" />
+    <Compile Include="Intelligence\Actors\AiCollectionConstructor.cs" />
+    <Compile Include="Intelligence\Actors\DecisionMaker.cs" />
+    <Compile Include="Intelligence\Actors\DecisionMakerBase.cs" />
+    <Compile Include="Intelligence\Actors\DecisionMakerState.cs" />
+    <Compile Include="Intelligence\Actors\Interfaces\IAICollection.cs" />
+    <Compile Include="Intelligence\Actors\Interfaces\IContext.cs" />
+    <Compile Include="Intelligence\Actors\Interfaces\IContextProvider.cs" />
+    <Compile Include="Intelligence\Actors\Interfaces\IDecisionMaker.cs" />
+    <Compile Include="Intelligence\Actors\Interfaces\IUtilityAI.cs" />
+    <Compile Include="Intelligence\Actors\UtilityAi.cs" />
+    <Compile Include="Intelligence\Behaviours\Behaviour.cs" />
+    <Compile Include="Intelligence\Behaviours\BehaviourCollection.cs" />
+    <Compile Include="Intelligence\Behaviours\Interfaces\IBehaviour.cs" />
+    <Compile Include="Intelligence\Behaviours\Interfaces\IBehaviourCollection.cs" />
+    <Compile Include="Intelligence\Collections\CircularBuffer.cs" />
+    <Compile Include="Intelligence\Collections\ICircularBuffer.cs" />
+    <Compile Include="Intelligence\Collections\IPriorityQueue.cs" />
+    <Compile Include="Intelligence\Collections\MovingAverage.cs" />
+    <Compile Include="Intelligence\Collections\PriorityQueue.cs" />
+    <Compile Include="Intelligence\Collections\ThreadSafePriorityQueue.cs" />
+    <Compile Include="Intelligence\Considerations\CompositeConsideration.cs" />
+    <Compile Include="Intelligence\Considerations\ConsiderationBase.cs" />
+    <Compile Include="Intelligence\Considerations\ConsiderationCollection.cs" />
+    <Compile Include="Intelligence\Considerations\ConsiderationConstructor.cs" />
+    <Compile Include="Intelligence\Considerations\GeneralConsiderationBase.cs" />
+    <Compile Include="Intelligence\Considerations\Interfaces\ICompositeConsideration.cs" />
+    <Compile Include="Intelligence\Considerations\Interfaces\IConsideration.cs" />
+    <Compile Include="Intelligence\Considerations\Interfaces\IConsiderationCollection.cs" />
+    <Compile Include="Intelligence\Evaluators\CompositeEvalutor.cs" />
+    <Compile Include="Intelligence\Evaluators\EvaluatorBase.cs" />
+    <Compile Include="Intelligence\Evaluators\Interfaces\IEvaluator.cs" />
+    <Compile Include="Intelligence\Evaluators\LinearEvaluator.cs" />
+    <Compile Include="Intelligence\Evaluators\PowerEvaluator.cs" />
+    <Compile Include="Intelligence\Evaluators\Sigmoid.cs" />
+    <Compile Include="Intelligence\General\AIConstructor.cs" />
+    <Compile Include="Intelligence\General\IAIPrototype.cs" />
+    <Compile Include="Intelligence\General\Interval.cs" />
+    <Compile Include="Intelligence\General\Point.cs" />
+    <Compile Include="Intelligence\General\Utility.cs" />
+    <Compile Include="Intelligence\Measures\Chebyshev.cs" />
+    <Compile Include="Intelligence\Measures\ConstrainedChebyshev.cs" />
+    <Compile Include="Intelligence\Measures\ConstrainedWeightedMetrics.cs" />
+    <Compile Include="Intelligence\Measures\Interfaces\IMeasure.cs" />
+    <Compile Include="Intelligence\Measures\MultiplicativePseudoMeasure.cs" />
+    <Compile Include="Intelligence\Measures\WeightedMetrics.cs" />
+    <Compile Include="Intelligence\Options\ConstantUtilityOptions.cs" />
+    <Compile Include="Intelligence\Options\Interfaces\IOption.cs" />
+    <Compile Include="Intelligence\Options\Interfaces\IOptionCollection.cs" />
+    <Compile Include="Intelligence\Options\Option.cs" />
+    <Compile Include="Intelligence\Options\OptionCollection.cs" />
+    <Compile Include="Intelligence\Options\OptionConstructor.cs" />
+    <Compile Include="Intelligence\Scheduling\CommandStream.cs" />
+    <Compile Include="Intelligence\Scheduling\DeferredCommand.cs" />
+    <Compile Include="Intelligence\Scheduling\Interfaces\IDeferredCommandHandler.cs" />
+    <Compile Include="Intelligence\Scheduling\Interfaces\IScheduler.cs" />
+    <Compile Include="Intelligence\Scheduling\QueuedCommand.cs" />
+    <Compile Include="Intelligence\Scheduling\Scheduler.cs" />
+    <Compile Include="Intelligence\Selectors\Interfaces\ISelector.cs" />
+    <Compile Include="Intelligence\Selectors\MaxUtilitySelector.cs" />
+    <Compile Include="Intelligence\Selectors\RandomSelector.cs" />
+    <Compile Include="Intelligence\Selectors\SequentialSelector.cs" />
+    <Compile Include="Intelligence\Selectors\WeightedRandomSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Speech\SpeechGrammar.cs" />
     <Compile Include="Speech\SpeechRecognition.cs" />
     <Compile Include="Speech\SpeechTalk.cs" />
+    <Compile Include="Utils\AIMath.cs" />
+    <Compile Include="Utils\AITime.cs" />
+    <Compile Include="Utils\Extensions\IntervalExtensions.cs" />
+    <Compile Include="Utils\Extensions\UtilityExtensions.cs" />
+    <Compile Include="Utils\Extensions\ValueType.cs" />
+    <Compile Include="Utils\Memory\MemorySave.cs" />
+    <Compile Include="Utils\Pcg.cs" />
+    <Compile Include="Utils\PcgExtended.cs" />
+    <Compile Include="Utils\PcgSeed.cs" />
+    <Compile Include="Utils\Processors\LanguageProcessor.cs" />
+    <Compile Include="Utils\ReaderWriterLockSlimExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="api\index.md" />
@@ -87,9 +171,7 @@
     <None Include="packages.config" />
     <None Include="toc.yml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utils\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\docfx.msbuild.2.4.0\build\docfx.msbuild.targets" Condition="Exists('..\packages\docfx.msbuild.2.4.0\build\docfx.msbuild.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
