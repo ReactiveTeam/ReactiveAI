@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ReactiveAI
 {
+    /// <summary>
+    /// Represents a point in 2D space.
+    /// </summary>
     public struct Pointf : IEquatable<Pointf>
     {
         public float X { get; private set; }

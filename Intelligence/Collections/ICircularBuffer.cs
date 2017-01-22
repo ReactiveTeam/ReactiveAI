@@ -61,7 +61,7 @@ namespace ReactiveAI.Intelligence.Collections
         void RemoveAt(int index);
 
         /// <summary>
-        ///   Gets or sets the <see cref="Crystal.ICircularBuffer`1"/> at the specified index.
+        ///   Gets or sets the <see cref="ICircularBuffer{T}"/> at the specified index.
         /// </summary>
         /// <param name="index">Index.</param>
         T this[int index] { get; set; }

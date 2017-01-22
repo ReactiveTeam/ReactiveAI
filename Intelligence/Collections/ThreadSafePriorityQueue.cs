@@ -134,7 +134,7 @@ namespace ReactiveAI.Intelligence.Collections
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="Crystal.ThreadSafePriorityQueue`2"/>
+        ///   Initializes a new instance of the <see cref="ThreadSafePriorityQueue{TItem, TPriority}"/>
         ///   class.
         /// </summary>
         public ThreadSafePriorityQueue()
@@ -143,7 +143,7 @@ namespace ReactiveAI.Intelligence.Collections
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="Crystal.ThreadSafePriorityQueue`2"/>
+        ///   Initializes a new instance of the <see cref="ThreadSafePriorityQueue{TItem, TPriority}"/>
         ///   class.
         /// </summary>
         /// <param name="size">Size.</param>

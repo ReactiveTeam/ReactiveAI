@@ -6,12 +6,26 @@ using System.Threading.Tasks;
 
 namespace ReactiveAI
 {
+    /// <summary>
+    /// An interval could be open and closed or combination of both at either
+    /// end.
+    /// </summary>
     public enum IntervalType
     {
         Open,
         Closed
     }
 
+    /// <summary>
+    /// Represents a vectorless interval of the form [a,b] or (a,b) or any 
+    /// combination of exclusive and inclusive end points.
+    /// </summary>
+    /// <typeparam name="T">Any comparent type</typeparam>
+    /// <remarks>
+    /// This is a vectorless interval, therefore if end component is larger
+    /// than start component, the interval will swap the two ends around
+    /// such that a is always larger than b.
+    /// </remarks>
     public struct Interval<T> where T : struct, IComparable
     {
         public T LowerBound { get; }
@@ -20,6 +34,11 @@ namespace ReactiveAI
         public IntervalType LowerBoundType { get; }
         public IntervalType UpperBoundType { get; }
 
+        /// <summary>
+        /// Check if given point lies within the interval
+        /// </summary>
+        /// <param name="point"></param>
+        /// <returns>True if point lies within the interval, otherwise false</returns>
         public bool Contains(T point)
         {
             if (LowerBound.GetType() != typeof(T) || UpperBound.GetType() != typeof(T))
@@ -61,6 +80,9 @@ namespace ReactiveAI
         }
     }
 
+    /// <summary>
+    /// Static class to generate regular Intervals using common types
+    /// </summary>
     public static class Interval
     {
         public static Interval<int> Range(int lower, int upper, IntervalType lowerType = IntervalType.Closed,IntervalType upperType = IntervalType.Closed)

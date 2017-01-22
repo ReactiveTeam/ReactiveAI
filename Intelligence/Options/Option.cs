@@ -58,7 +58,7 @@ namespace ReactiveAI.Intelligence.Options
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="T:Crystal.Option"/> class.
+        ///   Initializes a new instance of the <see cref="Option"/> class.
         /// </summary>
         public Option()
         {

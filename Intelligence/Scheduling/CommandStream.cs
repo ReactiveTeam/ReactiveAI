@@ -93,7 +93,7 @@ namespace ReactiveAI.Intelligence.Scheduling
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="Crystal.CommandStream"/> class.
+        ///   Initializes a new instance of the <see cref="CommandStream"/> class.
         /// </summary>
         /// <param name="initialQueueSize">Initial queue size.</param>
         public CommandStream(int initialQueueSize)

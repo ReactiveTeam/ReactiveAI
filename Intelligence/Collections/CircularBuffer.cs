@@ -150,7 +150,7 @@ namespace ReactiveAI.Intelligence.Collections
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="Crystal.CircularBuffer`1"/> class.
+        ///   Initializes a new instance of the <see cref="ICircularBuffer{T}"/> class.
         /// </summary>
         public CircularBuffer()
         {
@@ -158,7 +158,7 @@ namespace ReactiveAI.Intelligence.Collections
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="Crystal.CircularBuffer`1"/> class.
+        ///   Initializes a new instance of the <see cref="ICircularBuffer{T}"/> class.
         /// </summary>
         /// <param name="size">Size.</param>
         public CircularBuffer(int size)
@@ -180,7 +180,7 @@ namespace ReactiveAI.Intelligence.Collections
         }
 
         /// <summary>
-        ///   Gets or sets the <see cref="Crystal.CircularBuffer`1"/> at the specified index.
+        ///   Gets or sets the <see cref="ICircularBuffer{T}"/> at the specified index.
         /// </summary>
         /// <param name="index">Index.</param>
         public T this[int index]

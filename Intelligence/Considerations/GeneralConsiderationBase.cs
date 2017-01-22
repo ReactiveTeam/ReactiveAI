@@ -8,6 +8,11 @@ using System.Threading.Tasks;
 
 namespace ReactiveAI.Intelligence.Considerations
 {
+    /// <summary>
+    ///   Base class for contextual scorers used by <see cref="ICompositeConsideration"/>s
+    /// </summary>
+    /// <typeparam name="TContext">The type of the context.</typeparam>
+    /// <seealso cref="IConsideration"/>
     public abstract class ConsiderationBase<TContext> : IConsideration
        where TContext : class, IContext
     {

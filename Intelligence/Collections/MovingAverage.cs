@@ -38,7 +38,7 @@ namespace ReactiveAI.Intelligence.Collections
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="Crystal.MovingAverage"/> class.
+        ///   Initializes a new instance of the <see cref="MovingAverage"/> class.
         /// </summary>
         public MovingAverage()
         {
@@ -46,7 +46,7 @@ namespace ReactiveAI.Intelligence.Collections
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="Crystal.MovingAverage"/> class.
+        ///   Initializes a new instance of the <see cref="MovingAverage"/> class.
         /// </summary>
         /// <param name="length">Length.</param>
         public MovingAverage(int length)

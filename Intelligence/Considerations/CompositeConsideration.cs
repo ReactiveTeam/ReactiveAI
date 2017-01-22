@@ -130,7 +130,7 @@ namespace ReactiveAI.Intelligence.Considerations
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="Crystal.CompositeConsideration"/> class.
+        ///   Initializes a new instance of the <see cref="CompositeConsideration"/> class.
         /// </summary>
         public CompositeConsideration()
         {

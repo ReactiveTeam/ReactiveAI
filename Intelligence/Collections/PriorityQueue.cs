@@ -203,7 +203,7 @@ namespace ReactiveAI.Intelligence.Collections
         }
 
         /// <summary>
-        ///   Initializes a new instance of the <see cref="Crystal.PriorityQueue`2"/> class.
+        ///   Initializes a new instance of the <see cref="PriorityQueue{TItem, TPriority}"/> class.
         /// </summary>
         /// <param name="maxNodes">Max nodes.</param>
         public PriorityQueue(int maxNodes)
