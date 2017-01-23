@@ -11,7 +11,7 @@ namespace ReactiveAI.Intelligence.Considerations
     /// <summary>
     ///   Base class for contextual scorers used by <see cref="ICompositeConsideration"/>s
     /// </summary>
-    /// <seealso cref="T:Crystal.IConsideration"/>
+    /// <seealso cref="IConsideration"/>
     public abstract class ConsiderationBase : IConsideration
     {
         IConsiderationCollection _collection;

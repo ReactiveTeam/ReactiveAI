@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace ReactiveAI
 {
+    /// <summary>
+    ///   PCG (Permuted Congruential Generator) is a C# port from C the base PCG generator
+    ///   presented in "PCG: A Family of Simple Fast Space-Efficient Statistically Good
+    ///   Algorithms for Random Number Generation" by Melissa E. O'Neill. The code follows closely the one
+    ///   made available by O'Neill at her site: http://www.pcg-random.org/download.html
+    ///   To understand how exactly this generator works read this:
+    ///   http://www.pcg-random.org/pdf/toms-oneill-pcg-family-v1.02.pdf
+    /// </summary>
     public class Pcg
     {
         // This attribute ensures that every thread will get its own instance of PCG.
