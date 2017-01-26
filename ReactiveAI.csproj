@@ -48,6 +48,10 @@
       <HintPath>..\packages\Jint.2.8\lib\portable-net40+sl50+win+WindowsPhoneApp81+wp80\Jint.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Syn.Bot, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Syn.Bot.1.2.4\lib\portable-net45+win8+wp8\Syn.Bot.dll</HintPath>
       <Private>True</Private>
